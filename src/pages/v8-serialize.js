@@ -7,6 +7,9 @@ import data from "../../processed/cHVibGlzaC1yZXByby9ob3VzZWNhbGwtZ3Jvd3RoLXNpdG
 export default () => {
   return (
     <React.Fragment>
+      <h1>
+        <code>v8.serialize</code>
+      </h1>
       <Chart activities={data.activities} chartData={data.bufferedLines} />
       <Links />
     </React.Fragment>
