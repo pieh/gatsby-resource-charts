@@ -1,3 +1,6 @@
 import React from "react"
+import Links from "../components/links"
 
-export default () => <div>Hello world!</div>
+export default () => {
+  return <Links />
+}
