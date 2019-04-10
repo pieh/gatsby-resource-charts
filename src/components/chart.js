@@ -165,7 +165,7 @@ const CustomTooltip = ({
   )
 }
 
-export default ({ chartData, activities }) => {
+export default ({ chartData, activities, id }) => {
   const [range, setRange] = useState({
     startIndex: null,
     endIndex: null,
@@ -179,7 +179,7 @@ export default ({ chartData, activities }) => {
       <ResponsiveContainer>
         <LineChart
           data={chartData}
-          syncId="anyId"
+          syncId={id}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
         >
           <XAxis
